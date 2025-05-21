@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <table border="1" cellspacing="0" cellpadding="10" width="300" >
+        <tr>
+            <th align="right">제목셀</th>
+            <td bgcolor="yellow">셀</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table border="1" cellspacing="0" cellpadding="10">
+        <tr>
+            <td rowspan="2">1행 1열</td>
+            <td>1행 2열</td>
+        </tr>
+        <tr>
+            <td>2행2열</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table border="1" cellspacing="0" cellpadding="10">
+        <tr>
+            <td colspan="2" align="center">1행1열</td>
+        </tr>
+        <tr>
+            <td>2행1열</td>
+            <td>2행2열</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table border="1" cellspacing="0" cellpadding="10" width="600">
+        <tr>
+            <th>이름</th>
+            <td>홍길동</td>
+            <th>연락처</th>
+            <td>010-1234-5678</td>
+        </tr>
+        <tr>
+            <th>주소</th>
+            <td colspan="3"></td>
+        </tr>
+        <tr>
+            <th>자기소개</th>
+            <td colspan="3"></td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table border="1" cellspacing="0" cellpadding="10" width="500">
+        <caption>표설명글</caption>
+        <tr>
+            <th>서적명</th>
+            <th>출판사</th>
+            <th>가격</th>
+
+        </tr>
+        <tr>
+            <td>포토샵</td>
+            <td rowspan="3">나래디자인</td>
+            <td>2,500원</td>
+        </tr>
+        <tr>
+            <td>일러스트레이터</td>
+            <td>2,000원</td>
+        </tr>
+        <tr>
+            <td>웹표준</td>
+            <td>2,800원</td>
+        </tr>
+    </table>
+
+    <br>
+    
+    <table border="1" cellspacing="0" cellpadding="10" width="500">
+        <colgroup>
+            <col width="20%">
+            <col width="*">
+        </colgroup>
+        <tr>
+            <th>제목1</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>제목2</th>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>
