@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="">
+        <p>
+            ID:
+            <input type="text" placeholder="아이디를 입력하세요">
+        </p>
+        <p>
+            Pass:
+            <input type="password">
+        </p>
+        <p>
+            검색:
+            <input type="search">
+        </p>
+        <p>
+            color:
+            <input type="color">
+        </p>
+        <p>
+            number:
+            <input type="number" min="0" max="10" value="1">
+        </p>
+        <p>
+            range:
+            <input type="range" min="1" max="5" value="5">
+        </p>
+        <p>
+            <!-- checked = 기본 선택 설정 값. -->
+            <!-- name 설정이 같아야 radio 선택이 중복이 안된다. 
+                 이름 설정을 안하거나 이름이 다를경우 중복 선택 가능 -->
+            예 <input type="radio" name="yes or no" checked>
+            아니오 <input type="radio" name="yes or no">
+        </p>
+        <p>
+            html <input type="checkbox" checked>
+            css <input type="checkbox" checked>
+        </p>
+        <p>
+            <input type="submit" value="제출">
+        </p>
+        <p>
+            <input type="reset" value="초기화">
+        </p>
+        <p>
+            <input type="button" value="버튼">
+            <button>버튼</button>
+        </p>
+        <p>
+            <input type="file">
+        </p>
+        <p>
+            <input type="date">
+        </p>
+        <p>
+            <textarea name="" id="" cols="30" rows="5"></textarea>
+        </p>
+        <p>
+            전화번호:
+            <select name="" id="">
+                <option value="">국번</option>
+                <option value="">02</option>
+                <option value="" selected>051</option>
+                <option value="">055</option>
+                <!-- selected 기본 선택값 -->
+            </select>
+        </p>
+    </form>
+</body>
+</html>
