@@ -1,0 +1,19 @@
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient(to right top, #e90b8d, #dbd3d2);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+b {
+    color: #ad156e;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(92, 10, 95);
+}
+
+a {
+    color: blue;
+}

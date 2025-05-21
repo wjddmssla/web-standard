@@ -1,0 +1,22 @@
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient(to right top, rgb(202, 35, 35), #000000d8);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+p {
+    color: rgb(201, 10, 10);
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+b {
+    color: black;
+    background: linear-gradient(to right top, rgb(148, 140, 140), rgb(0, 0, 0));
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+a {
+    color: blue;
+}
