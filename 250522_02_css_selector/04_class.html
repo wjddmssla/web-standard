@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class</title>
+
+    <style>
+        /* p.class */
+        .class {
+            color: aquamarine;
+        }
+
+        /* p.tag */
+        .tag {
+            font-style: oblique;
+        }
+
+        /* p.spacing */
+        .spacing {
+            color: blue;
+        }
+
+        p {
+            color: red;
+        }
+        /* class 선택자가 태그선택보다 우선시되므로 p태그는 적용되지 않는다. */
+
+    </style>
+</head>
+<body>
+    <h1>class 선택자</h1>
+    <p class="class">
+        class 선택자는 문서 내에서 여러번 사용가능한 선택자로 요소명과 클래스명을 구분할 떄는
+        (.) 점을 사용합니다.
+    </p>
+    <p class="tag">
+        class명을 선택자로 지정할 경우 요소(tag)명을 생략할 수 있습니다.
+    </p>
+    <p class="spacing">
+        요소(tag)명과 class명 사이를 띄우면 안됩니다!!!
+    </p>
+    <p class="class">
+        class 선택자는 태그선택자보다 우선순위입니다.
+        <!-- class는 동일한 이름을 설정 가능하다. -->
+    </p>
+</body>
+</html>
