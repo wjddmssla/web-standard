@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font-size</title>
+
+    <style>
+        html {
+            font-size: 20px;
+        }
+
+        body {
+            font-size: 16px;
+        }
+
+        h1{
+          font-size: 16px;  
+        }
+        
+        .px{
+            font-size: 12px;
+            /* 10px이하는 최대한 사용하지 않는다. */
+        }
+
+        .unit{
+            font-size: 1rem;
+        }
+
+        .em{
+            font-size: 2em;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>서체의 크기</h1>
+    <p>
+        font-size는 글자의 크기 설정입니다.
+        <!-- 기본 size는 body는 16px, 제목은 20px -->
+    </p>
+    <p class="unit">
+        크기의 단위는 px, em, rem, %, vw, vh, calc()등이 있습니다.
+        <!-- 1em=16px rem=20px-->
+    </p>
+    <p class="px">
+        px 단위를 적용한 문단은 body 요소의 크기를 무시하고
+        직접 지정한 px의 크기로 설정됩니다.
+    </p>
+    <p class="em">
+        em 단위를 적용한 문단은 상위 요소의 크기를 기준으로 설정됩니다.
+    </p>
+</body>
+</html>
