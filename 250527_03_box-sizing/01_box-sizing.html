@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-sizing</title>
+
+    <style>
+        div {
+            width: 500px;
+            height: 300px;
+            border: 5px solid black;
+            background-color: skyblue;
+            margin: 50px;
+            text-align: center;
+            align-content: center;
+            padding: 50px;
+        }
+
+        .box1 {
+            box-sizing: content-box;
+            /* 기본값 width = content */
+        }
+
+        .box2 {
+            box-sizing: border-box;
+            /* width = content + padding + border */
+        }
+    </style>
+</head>
+<body>
+    <h1>box-sizing 속성</h1>
+    <p>box-sizing 속성은 박스모델의 크기의 기준을 설정하는 속성입니다.</p>
+
+    <div class="box1">
+        content-box -> width = content
+    </div>
+
+    <div class="box2">
+        border-box -> width = box
+    </div>
+</body>
+</html>
