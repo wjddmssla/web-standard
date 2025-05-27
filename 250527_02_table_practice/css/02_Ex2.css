@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(93, 151, 88);
+    font-family: "맑은 고딕";
+    font-size: 12px;
+    color: black;
+    line-height: 22px;
+}
+
+#container {
+    width: 700px;
+    margin: 50px auto;
+    padding: 50px;
+    border: 5px solid rgb(17, 68, 38);
+}
+
+h1 {
+    font-size: 30px;
+    color: rgb(17, 68, 38);
+    margin-bottom: 30px;
+}
+
+p {
+    margin-bottom: 20px;
+    color: white;
+}
+
+h2 {
+    background: linear-gradient(to left top, white, rgb(35, 109, 66), rgb(205, 255, 205)); 
+    /* background: linear-gradient(to left top, rgb(178, 243, 181), rgb(17, 68, 38)); */
+    /* background-color: rgb(17, 68, 38); */
+    color: rgb(178, 185, 147);
+    margin-bottom: 15px;
+    padding: 10px;
+
+}
+
+ul {
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+table {
+    border-top: 4px solid rgb(17, 68, 38);
+    border-collapse: collapse;
+    width: 100%;
+}
+
+caption {
+    text-align: right;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+th, td {
+    border-bottom: 1px solid white;
+    padding: 12px 0px;
+}
+
+
+td {
+    text-align: center;
+}
