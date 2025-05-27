@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'SangSangRock';
+    src: url('https://gcore.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/SangSangRockOTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'SangSangRock';
+    line-height: 1.5em;
+}
+
+#container {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 30px;
+    border: 2px solid coral;
+}
+
+h1 {
+    background: linear-gradient(to right top, white, coral);
+    color: rgb(65, 52, 52);
+    text-align: center;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+}
+
+p{
+    font-size: 20px;
+}
+
+.sky {
+    color: coral;
+    font-weight: bold;
+}
