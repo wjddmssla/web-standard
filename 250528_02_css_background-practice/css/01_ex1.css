@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "궁서";
+    font-size: 16px;
+    line-height: 1.5em;
+    color: rgb(117, 118, 129);
+    background-image: url(/250528_02_css_background-practice/images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+#container {
+    width: 500px;
+    margin: 50px auto;
+    border: 3px solid rgb(164, 196, 238);
+    padding: 30px;
+    background-image: url(/250528_02_css_background-practice/images/yoon.jpg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+h1 {
+    background-color: rgb(207, 228, 255);
+    color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.poet {
+    color: rgb(164, 196, 238);
+    font-weight: bold;
+}
