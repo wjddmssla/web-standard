@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "나눔고딕";
+    font-size: 12px;
+    line-height: 22px;
+    color: black;
+    background-color: beige;
+}
+
+#container {
+    width: 1000px;
+    height: 466px;
+    margin: 50px auto;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.text {
+    width: 300px;
+    float: left;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.img {
+    width: 700px;
+    height: 466px;
+    float: left;
+}
+
+.mokpo {
+    color: orange;
+    margin-bottom: 20px;
+}
+
+.october {
+    color: rgb(209, 209, 209);
+    margin-bottom: 5px;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 40px;
+}

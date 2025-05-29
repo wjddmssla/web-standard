@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "맑은 고딕";
+    font-size: 12px;
+    line-height: 22px;
+    color: #e1e1e1;
+}
+
+#container {
+    background-color: #444343;
+    box-sizing: border-box;
+    width: 830px;
+    height: 440px;
+    margin: 0px auto;
+}
+
+.img {
+    width: 500px;
+    float: left;
+}
+
+.text {
+    width: 330px;
+    float: right;
+    padding: 30px 25px;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+h2 {
+    margin-bottom: 30px;
+    color: skyblue;
+}
+
+p{
+    margin-bottom: 8px;
+}
+
+.create {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.develop {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.ask {
+    margin-top: 30px;
+    color: skyblue;
+}
