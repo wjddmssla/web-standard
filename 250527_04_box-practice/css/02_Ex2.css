@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 12px;
+    color: #000;
+    line-height: 22px;
+    font-style: "나눔 고딕";
+    box-sizing: border-box;
+}
+
+#container {
+    width: 800px;
+    margin: 50px auto;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+.box {
+    margin: 10px 0px;
+}
+
+h2 {
+    font-size: 22px;
+    color: white;
+    padding: 17px;
+}
+
+span {
+    opacity: 50%;
+}
+
+.consideration {
+    background-color: orangered;
+}
+
+.degree {
+    background-color: yellowgreen;
+}
+
+.person {
+    background: blueviolet;
+}
+
+.mind {
+    color: orangered;
+}
+
+.walk {
+    color: yellowgreen;
+}
+
+.life {
+    color: blueviolet;
+}
+
+.mind, .walk, .life {
+    margin-bottom: 10px;
+}
+
+.detail {
+    background-color: rgb(240, 240, 240);
+    padding: 30px;
+}
