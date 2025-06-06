@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    width: 500px;
+    height: 150px;
+    margin: 50px auto;
+    border: 2px solid red;
+}
+
+.box1 {
+    overflow: visible;
+    /* 기본값 -> 변화없음*/
+}
+
+.box2 {
+    overflow: hidden;
+}
+
+.box3 {
+    overflow: scroll;
+}
+
+.box4 {
+    overflow: auto;
+}
