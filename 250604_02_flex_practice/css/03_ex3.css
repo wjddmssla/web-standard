@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    font-family: "D2Coding";
+    font-size: 14px;
+    line-height: 24px;
+    color: black;
+}
+
+#container {
+    width: 1200px;
+    margin: 50px auto;
+    /* background-color: beige; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.side-aside {
+    width: 250px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.main-container {
+    padding-top: 10px;
+    width: 900px;
+    box-sizing: border-box;
+}
+
+.side-aside h2 {
+    text-align: center;
+    font-size: 28px;
+    padding: 60px 0;
+    background-color: rgb(21, 54, 82);
+    color: white;
+}
+
+.lnb {
+    height: 380px;
+}
+
+.lnb li a {
+    background-color: rgb(221, 221, 221);
+    display: block;
+    padding: 10px 20px;
+    margin-top: 7px;
+    background-image: url(../images/lnb_bg.png);
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+}
+
+.lnb li a:hover {
+    background-color: rgb(21, 54, 82);
+    color: white;
+}
+
+.main-container h1 {
+    font-size: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid black;
+}
+
+.introduce {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.introduce li{
+    width: 280px;
+    height:  380px;
+    border: 1px solid rgb(212, 207, 207);
+    background-repeat: no-repeat;
+    margin: 0 0px 30px 0;
+    box-sizing: border-box;
+    padding: 25px;
+}
+
+.introduce h2 {
+    padding-top: 55%;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(212, 207, 207);
+}
+
+.introduce p {
+    padding-top: 20px;
+}
+
+.introduce li:nth-child(1) {
+    background-image: url(../images/startup_01.jpg);
+}
+
+.introduce li:nth-child(2) {
+    background-image: url(../images/startup_02.jpg);
+    margin: 0 30px;
+}
+
+.introduce li:nth-child(3) {
+    background-image: url(../images/startup_03.jpg);
+}
+
+.introduce li:nth-child(4) {
+    background-image: url(../images/startup_04.jpg);
+}
+
+.introduce li:nth-child(5) {
+    background-image: url(../images/startup_05.jpg);
+    margin: 0 30px;
+}
+
+.introduce li:nth-child(6) {
+    background-image: url(../images/startup_06.jpg);
+}

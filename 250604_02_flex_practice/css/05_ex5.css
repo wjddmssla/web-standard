@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "고딕";
+    font-size: 13px;
+    line-height: 22px;
+    color: black;
+}
+
+#container {
+    width: 800px;
+    margin: 50px auto;
+    background-color: rgb(199, 199, 199);
+    box-sizing: border-box;
+    padding: 50px;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+span {
+    color: rgb(241, 42, 75);
+}
+
+p {
+    margin: 10px 0px;
+}
+
+h3 {
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.menu1 {
+    width: 300px;
+    /* height: 160px; */
+}
+
+.herb {
+    width: 470px;
+}
+
+.herb span {
+    font-size: 15px;
+}
+
+.price {
+    font-size: 17px;
+    color: rgb(131, 131, 131);
+    margin-top: 20px;
+}

@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "나눔고딕";
+    font-size: 12px;
+    line-height: 22px;
+}
+
+#container {
+    width: 750px;
+    margin: 50px auto;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.company {
+    width: 250px;
+}
+
+.main {
+    width: 470px;
+}
+
+p {
+    padding-top: 15px;
+}
+
+table {
+    margin-top: 15px;
+    border-top: 5px solid rgba(12, 34, 131, 0.712);
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border-bottom: 1px solid black;
+    padding: 5px 10px;
+    text-align: left;
+}
+
+th {
+    background-color: rgb(226, 226, 226);
+}
+
