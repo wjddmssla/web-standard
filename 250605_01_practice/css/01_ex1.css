@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Chosunilbo_myungjo';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin:0;
+    padding: 0;
+}
+
+body {
+    font-size: 12px;
+    line-height: 22px;
+    color: black;
+    font-family: "Chosunilbo_myungjo";
+}
+
+#container {
+    width: 1000px;
+    margin: 50px auto;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.CI {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    border: 1px solid black;
+    margin: 20px 0;
+    box-sizing: border-box;
+}
+
+.img {
+    width: 150px;
+}
+
+.CI_introduce {
+    width: 735px;
+}
+
+.BI {
+    background-image: url(../images/bi.png);
+    background-repeat: no-repeat;
+    background-position: left 30px top 30px;
+    padding: 30px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding-left: 230px;
+}
+
+
+p {
+    margin: 10px 0;
+}
+
+span {
+    font-weight: bold;
+}
+
+.CI span {
+    color: #0077c0;
+}
+
+
+.creative span {
+    color: orange;
+}
+
+.natural span {
+        color: rgb(72, 201, 12);
+}
