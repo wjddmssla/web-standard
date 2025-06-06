@@ -1,0 +1,50 @@
+.soccer {
+    display: flex;
+    /* justify-content: space-between; */
+    border-top: 1px solid rgb(209, 209, 209);
+    border-bottom: 1px solid rgb(209, 209, 209);
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.place {
+    width: 100%;
+    background-color: rgb(247, 247, 247);
+    padding: 30px;
+}
+
+.place h2 {
+    font-weight: inherit;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.place p {
+    color: rgb(158, 158, 158);
+}
+
+.football {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(209, 209, 209);
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    padding: 30px;
+    background-color: rgb(247, 247, 247);
+}
+
+.football img {
+    padding: 20px 5px;
+}
+
+.explanation {
+    padding-left: 30px;
+}
+
+.explanation p {
+    margin-bottom: 20px;
+}
+
+.explanation ul{
+    padding-left: 30px;
+}

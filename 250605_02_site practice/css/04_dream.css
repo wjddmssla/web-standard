@@ -1,0 +1,35 @@
+.theater {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgb(209, 209, 209);
+    border-bottom: 1px solid rgb(209, 209, 209);
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.explanation {
+    width: 100%;
+    background-color: rgb(247, 247, 247);
+    padding: 30px;
+}
+
+.explanation h2 {
+    font-weight: inherit;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.explanation p {
+    color: rgb(158, 158, 158);
+}
+
+.experience ul {
+    margin-top: 20px;
+    border: 1px solid rgb(209, 209, 209);
+    background-color: rgb(231, 231, 231);
+    padding: 30px 50px;
+}
+
+span {
+    font-weight: bold;
+}

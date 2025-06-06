@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'Arita-dotum-Medium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-dotum-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.side-aside ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    font-family: "Arita-dotum-Medium";
+    font-size: 14px;
+    line-height: 24px;
+    color: black;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    background: linear-gradient(to right top,#2173d9, #cdddf0, #2173d9);
+    background-size: 50%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+#container {
+    width: 1000px;
+    margin: 50px auto;
+    height: 800px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.main-container {
+    padding-left: 60px;
+    /* width: 750px; */
+}
+
+.side-aside {
+    width: 200px;
+    /* float: left; */
+    box-sizing: border-box;
+}
+
+.lnb {
+    /* height: 400px; */
+    border-top: 1px solid rgb(209, 209, 209);
+    margin-top: 20px;
+}
+
+.lnb li a {
+    font-weight: bold;
+    color: gray;
+    display: block;
+    padding: 10px 20px;
+    border-bottom: 1px solid rgb(209, 209, 209);
+    
+}
+
+.lnb li a:hover {
+    background-color: #cdddf0;
+    color: #2173d9;
+}
+
+.guide {
+    margin-top: 20px;
+}
+
+.guide h2 {
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-top: 3px solid #2173d9;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #82aee4;
+    padding: 5px 0px;
+    text-align: center;
+}
+
+th {
+    background-color: rgb(245, 245, 245);
+    color: #2173d9;
+    font-weight: 1000;
+}
+
