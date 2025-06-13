@@ -1,0 +1,197 @@
+@font-face {
+  font-family: 'LotteMartDream';
+  font-style: normal;
+  font-weight: 400;
+  src: url('//fastly.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff2') format('woff2'), url('//fastly.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff') format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'LotteMartDream';
+    font-size: 12px;
+    line-height: 22px;
+    color: black;
+}
+
+#top {
+    background: #000;
+}
+
+.link {
+    width: 1000px;
+    height: 32px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: right;
+}
+
+.link a {
+    color: white;
+    text-decoration: none;
+}
+
+.link li {
+    padding: 3px 0 0 20px;
+}
+
+#header {
+    border-bottom: 5px solid #ee1d23;
+    height: 82px;
+}
+
+.inner_header {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-top: 20px;
+}
+
+.gnb {
+    display: flex;
+    margin-top: 40px;
+}
+
+.gnb li a {
+    display: block;
+    margin: 0 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+
+.gnb li a:hover {
+    color: #ee1d23;
+}
+
+#main-container {
+    width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lnb_wrap {
+    width: 200px;
+}
+
+.lnb_wrap h2 {
+    font-size: 30px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #ee1d23;
+}
+
+.lnb {
+    border-top: 1px solid #d3d3d3;
+}
+
+.lnb li a {
+    color: black;
+    display: block;
+    padding: 10px 0px;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.lnb li a:hover {
+    font-weight: bold;
+    color: #ee1d23;
+    background: url(../images/menu_on.png) no-repeat right;
+}
+
+.container {
+    width: 750px;
+    background: url(../images/bg_meat.gif) no-repeat right top;
+    box-sizing: border-box;
+}
+
+.meat-header h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.meat-header .lotte_food {
+    color: #999;
+    margin-bottom: 50px;
+}
+
+.meat-header h2 {
+    color: #ee1d23;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 23px;
+    line-height: 1.5em;
+}
+
+.content {
+    width: 750px;
+    display: flex;
+    background: #ee1d23;
+}
+
+.introduce {
+    width: 250px;
+    padding: 25px;
+}
+
+.best {
+    background-color: #e7e7e7;
+    padding: 30px;
+}
+
+.best h2 {
+    font-weight: inherit;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+#footer {
+    border-top: 2px solid #d3d3d3;
+    border-bottom: 2px solid #d3d3d3;
+}
+
+.top_footer {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.link_footer {
+    display: flex;
+    gap: 20px;
+}
+
+.link_footer li a {
+    color: black;
+}
+
+.bottom_footer {
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom_footer span {
+    color: #ee1d23;
+}
+
+.footer_logo {
+    align-items: center;
+}
