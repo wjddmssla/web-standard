@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: black;
+}
+
+#nav {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: violet;
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.gnb {
+    display: flex;
+    margin-top: 30px;
+}
+
+.gnb li a {
+    display: block;
+    margin: 0 30px;
+    font-weight: 30px;
+}
+
+.gnb li a:hover {
+    color: white;
+}
