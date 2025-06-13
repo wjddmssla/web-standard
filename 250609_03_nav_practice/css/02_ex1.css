@@ -1,0 +1,196 @@
+/* 여백초기화 */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 12px;
+    line-height: 22px;
+    color: #111111;
+}
+
+#top{
+    background-color: #111111;
+    color: #fff;
+}
+.inner_top{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link{
+    display: flex;
+}
+
+.link li a{
+    display: block;
+    padding: 4px 30px;
+}
+
+.link li:nth-child(1) a,
+.link li:nth-child(2) a{
+    background-color: #008944;
+}
+
+.link li:nth-child(3) a,
+.link li:nth-child(4) a{
+    background-color: #7E5300;
+}
+
+.link li:nth-child(1) a,
+.link li:nth-child(3) a{
+    border-right: 1px solid rgba(255,255,255,0.3);
+}
+
+.util{
+    display: flex;
+    text-transform: uppercase;
+}
+
+.util li{
+    padding: 3px 0 0 20px;
+}
+
+
+#header{
+    border-bottom: 1px solid #ababab;
+    height: 84px;
+}
+
+.inner_header{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    margin-top: 20px;
+}
+
+.gnb{
+    display: flex;
+    margin-top: 40px;
+}
+
+.gnb li a{
+    display: block;
+    margin: 0 30px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.gnb li a:hover{
+    color: #008944;
+}
+
+#container{
+    width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lnb_wrap{
+    width: 200px;
+}
+
+.lnb_wrap h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.lnb{
+    border-top: 1px solid #666;
+}
+
+.lnb li a{
+    display: block;
+    padding: 6px 10px;
+    border-bottom: 1px solid #666;
+}
+
+.lnb li a:hover{
+    background-color: #008944;
+    color: #fff;
+}
+
+.content{
+    width: 750px;
+}
+
+.content h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img_wrap {
+    width: 250px;
+}
+
+.text_wrap {
+    width: 470px;
+}
+
+.content p{
+    margin-top: 16px;
+}
+
+table {
+    border-top: 3px solid #2573da;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+th, td {
+    border-bottom: 1px solid #000;
+    padding: 6px 10px;
+}
+
+th{
+    background-color: #ddd;
+}
+
+#footer {
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+    padding: 20px 0 80px;
+}
+
+.inner_footer {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.footer_link {
+    display: flex;
+}
+
+.footer_link li {
+    margin-right: 30px;
+}
+
+.inner_footer p {
+    margin-top: 20px;
+    opacity: 0.5;
+}
