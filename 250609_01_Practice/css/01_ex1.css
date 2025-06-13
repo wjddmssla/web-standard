@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+#main-container {
+    background-image: url(../images/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat ;
+    height: 700px;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.wrap {
+    width: 400px;
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+    opacity: 90%;
+}
+
+hr {
+    margin-top: 30px;
+    border: 0;
+    height: 0.5px;
+    background: gray;
+}
+
+.steak {
+    margin-bottom: 20px;
+    padding: 50px 50px 40px 50px;
+}
+
+.steak h1 {
+    margin: 20px 0px;
+}
+
+.steak p {
+    margin-top: 30px;
+}
+
+.card {
+    border: 1px solid white;
+    padding: 10px;
+    text-align: center;
+}
+
+.price {
+    color: gray;
+}
+
+.price span {
+    font-size: 30px;
+    color: rgb(153, 118, 86);
+}
+
+.click {
+    /* width: 100%; */
+    display: flex;
+}
+
+ul {
+    list-style: none;
+}
+
+.click li {
+    width: 50%;
+}
+
+.click li a{
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center top 40px;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.click li:nth-child(1) a{
+    background-color: rgb(153, 118, 86);
+    background-image: url(../images/icon_store.png);
+}
+
+.click li:nth-child(2) a{
+    background-color: brown;
+    background-image: url(../images/icon_reservation.png);
+}
