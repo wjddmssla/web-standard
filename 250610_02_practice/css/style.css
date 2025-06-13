@@ -1,0 +1,77 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "나눔고딕";
+    font-size: 13px;
+    line-height: 26px;
+    color: rgb(66, 66, 66);
+}
+
+a {
+    text-decoration: none;
+    color: #5c5c5c;
+}
+
+#top_nav {
+    height: 68px;
+    border-bottom: 1px solid #5c5c5c;
+}
+
+.gnb {
+    width: 900px;
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gnb li a {
+    padding: 20px 82px;
+    display: block;
+    color: #333;
+}
+
+.gnb li a:hover {
+    font-weight: bold;
+    border-bottom: 3px solid #5c5c5c;
+}
+
+#container {
+    width: 900px;
+    margin: 80px auto;
+}
+
+.main-img {
+    margin-bottom: 30px;
+}
+
+.building {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.space1,
+.space3 {
+    padding-right: 100px;
+}
+
+.space2 {
+    padding-left: 100px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+ul {
+    padding-left: 20px;
+}
