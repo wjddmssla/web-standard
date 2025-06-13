@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+#header {
+    width: 1000px;
+    height: 80px;
+    background-color: #ddd;
+    margin: 0 auto;
+    position: relative;
+}
+
+.logo {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.link {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    display: flex;
+}
+
+.link li {
+    margin-right: 20px;
+}
+
+.gnb {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    display: flex;
+}
+
+.gnb li a{
+    display: block;
+    margin: 0 20px;
+}

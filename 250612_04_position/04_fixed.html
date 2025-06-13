@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fixed</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            height: 1000px;
+        }
+
+        #section1 {
+            background-color: red;
+        }
+
+        #section2 {
+            background-color: blue;
+        }
+
+        .top_btn {
+            position: fixed;
+            right:30px;
+            bottom: 100px;
+            z-index: 50;
+        }
+
+        .bottom_btn {
+            position: fixed;
+            right:30px;
+            bottom: 30px;
+            z-index: 50;
+        }
+    </style>
+</head>
+<body>
+    <div id="section1"></div>
+    <div id="section2"> </div>
+
+    <p class="top_btn">
+        <a href="#section1"><img src="images/top.jpg" alt=""></a>
+    </p>
+
+    <p class="bottom_btn">
+        <a href="#section2"><img src="images/bottom.jpg" alt=""></a>
+    </p>
+</body>
+</html>
