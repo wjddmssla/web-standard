@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 12px;
+    line-height: 22px;
+    color: black;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+#top_nav {
+    background-color: black;
+}
+
+.top {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.top li a {
+    display: block;
+    padding: 5px 10px;
+    
+}
+
+.left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.left li a{
+    color: white;
+
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.right li a{
+    color: skyblue;
+}
+
+#header {
+    border-bottom: 1px solid rgb(184, 184, 184);
+    height: 86px;
+}
+
+.header_logo {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.logo {
+    padding: 20px 0px;
+}
+
+.gnb {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gnb li a {
+    display: block;
+    color: black;
+    font-size: 20px;
+    padding: 20px;
+    font-weight: bold;
+}
+
+#container {
+    width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+}
+
+.lnb_wrap{
+    width: 500px;
+    margin-right: 50px;
+    box-sizing: border-box;
+}
+
+.business {
+    background: url(../images/h2_bg.gif) no-repeat center;
+    text-align: center;
+    padding: 40px;
+    color: white;
+    border-bottom: 1.5px solid rgb(36, 50, 110);
+}
+
+.business p {
+    opacity: 70%;
+}
+
+.lnb{
+    background-color: rgb(61, 61, 61);
+}
+
+.lnb li {
+    border-top: 1.5px solid rgb(145, 145, 145);
+    border-bottom: 1.5px solid rgb(0, 0, 0);
+}
+
+.lnb li a{
+    color: rgb(216, 216, 216);
+    display: block;
+    padding: 15px;
+}
+
+.lnb li a:hover{
+    color: skyblue;
+}
+
+.main-container {
+    width: 800px;
+}
+
+.content {
+    display: flex;
+    background-color: rgb(63, 63, 63);
+}
+
+.civil {
+    padding: 25px;
+}
+
+.civil h1 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.civil h2 {
+    color: skyblue;
+    margin-bottom: 20px;
+}
+
+.civil p {
+    color: white;
+    opacity: 80%;
+    margin-top: 5px;
+    margin-bottom: 25px;
+
+}
+
+.civil h4 {
+    color: white;
+}
+
+.civil h3 {
+    text-decoration: underline;
+    color: white;
+}
+
+.civil p span {
+    color: skyblue;
+}
+
+.detail {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.text {
+    padding-right: 50px;
+}
+
+#footer {
+    background-color: rgb(100, 100, 100);
+    padding: 30px
+}
+
+.foot_text {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.foot_logo {
+    margin-right: 50px;
+}
+
+.foot_text p{
+    color: white;
+    opacity: 80%;
+}
+
+
+
+
+
+
