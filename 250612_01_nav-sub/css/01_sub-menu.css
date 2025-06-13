@@ -1,0 +1,66 @@
+/* 여백초기화 */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #111111;
+}
+
+#nav{
+    width: 1000px;
+    margin: 0 auto;
+    height: 80px;
+    background-color: #ddd;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.gnb{
+    display: flex;
+    margin-top: 40px;
+}
+
+.gnb> li> a{
+    display: block;
+    margin: 0 30px;
+    padding-bottom: 16px;
+    font-weight: bold;
+}
+
+.gnb> li> a:hover{
+    color: red;
+}
+
+.gnb li:hover .submenu {
+    display: block;
+}
+
+.submenu{
+    display: none;
+}
+
+.submenu li a{
+    display: block;
+    background-color: rgb(137, 173, 182);
+    padding: 6px 10px;
+    border-bottom: 1px solid #000;
+}
+
+.submenu li a:hover{
+    background-color: #646796;
+    color: #fff;
+}
