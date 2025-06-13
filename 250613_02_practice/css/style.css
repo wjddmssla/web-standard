@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 12px;
+    line-height: 22px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#header {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.inner_head {
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    position: relative;
+}
+
+.membership {
+    padding: 30px 0px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.logo {
+    /* text-align: center;
+    align-content: center; */
+    position: absolute;
+    left: 45%;
+    top: 30%;
+}
+
+.head {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    right: 0;
+    top: 0;
+}
+
+.head li a {
+    display: block;
+    margin-left: 10px;
+}
+
+#top-nav {
+    background-color: rgb(141, 199, 75);
+}
+
+.gnb {
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.gnb> li {
+    position: relative;
+}
+
+.gnb > li > a {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 20px;
+}
+
+.gnb li a:hover {
+    color: #0c520c;
+}
+
+.submenu {
+    margin-top: 15px;
+    display: none;
+    position: absolute;
+    top: 46px;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.submenu li a {
+    font-size: 15px;
+    background-color: #5ead5e;
+    display: block;
+    color: white;
+    border-bottom: 1px solid whitesmoke;
+    padding: 10px 15px;
+}
+
+.submenu li a:hover {
+    background-color: #b2f0af;
+    color: black;
+}
+
+.gnb li:hover .submenu{
+    display: block;
+}
+
+#container {
+    display: flex;
+    width: 1000px;
+    margin: 20px auto;
+}
+
+.main-img {
+    width: 700px;
+}
+
+.content {
+    width: 250px;
+}
+
+.box1, .box2 {
+    border-bottom: 1px solid #b8b8b8;
+}
+
+.box1, .box2, .box3 {
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding: 30px 0;
+}
+
+.box1 {
+    background-image: url(../images/banner_bg_01.jpg);
+}
+
+.box2 {
+    background-image: url(../images/banner_bg_02.jpg);
+}
+
+.box3 {
+    background-image: url(../images/banner_bg_03.jpg);
+}
+
+.content h2 {
+    margin-bottom: 10px;
+    color: #5ead5e;
+}
+
+.content p {
+    margin-bottom: 20px;
+}
+
+.content a {
+    display: inline-block;
+    text-align: center;
+    background-color: #1a861a;
+    color: white;
+    padding: 10px 20px;
+}
+
+#footer {
+    background-color: rgb(71, 71, 71);
+    height: 188px;
+}
+
+.under {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    color: rgb(206, 206, 206);
+}
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.foot li a{
+    display: block;
+    color: rgb(206, 206, 206);
+}
+
+.right-foot a:hover {
+    opacity: 50%;
+}
