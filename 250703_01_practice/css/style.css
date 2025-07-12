@@ -1,0 +1,384 @@
+@keyframes bg {
+    0% {
+        background-image: url(../images/main/mainbanner_1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    25% {
+        background-image: url(../images/main/mainbanner_2.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    50% {
+        background-image: url(../images/main/mainbanner_3.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    75% {
+        background-image: url(../images/main/mainbanner_4.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    100% {
+        background-image: url(../images/main/mainbanner_1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "나눔고딕";
+    font-size: 14px;
+    line-height: 24px;
+}
+
+ul {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#main-wrap {
+    min-width: 1100px;
+}
+
+#header {
+    background-color: white;
+    border-bottom: 3px solid black;
+    position: relative;
+}
+
+.inner_header {
+    width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    padding: 10px 0;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.sitemap {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.sitemap a{
+    display: block;
+    color: rgb(156, 156, 156);
+    font-weight: bold;
+}
+
+.gnb {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* .gnb> li {
+    position: relative;
+} */
+
+.gnb > li > a {
+    display: block;
+    font-size: 20px;
+    color: black;
+    padding: 20px 10px;
+}
+
+.gnb li a:hover {
+    color: green;
+}
+
+.submenu {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    z-index: 99;
+    border-top: 1px solid rgba(128, 128, 128, 0.507);
+    border-bottom: 3px solid black;
+}
+
+.inner_submenu {
+    width: 1024px;
+    margin: 0 auto;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+.gnb_sub li a:hover {
+    color: green;
+}
+
+.gnb li:hover .submenu{
+    display: block;
+}
+
+.gnb_sub {
+    display: flex;
+    /* gap: 10px; */
+}
+
+.gnb_sub li a{
+    font-size: 14px;
+    display: block;
+    padding: 20px 0;
+    color: black;
+    white-space: nowrap;
+}
+
+.gnb_sub li a::after {
+    margin: 0 30px;
+    content: '|';
+    color: #8b8b8b;
+}
+
+.gnb_sub li:last-child a::after {
+    content: '';
+}
+
+#banner {
+    background-image: url(../images/main/mainbanner_1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    animation: bg 5s infinite;
+}
+
+#main_container {
+    width: 1024px;
+    margin: 0 auto;
+    padding: 60px;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.tidings {
+    display: flex;
+    gap: 20px;
+}
+
+.left_container h1, .investment h1{
+    font-size: 25px;
+    text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.459);
+    color: white;
+}
+
+.news {
+    background: rgb(204, 204, 204);
+    padding: 30px;
+    width: 328px;
+    box-sizing: border-box;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.news h2 {
+    font-size: 15.7px;
+    color: #575757;
+}
+
+.news-img {
+    display: flex;
+    gap: 10px;
+    padding: 20px 0;
+    border-bottom: 1px dashed #9b9b9b;
+}
+
+.news-img p{
+    font-size: 13px;
+}
+
+.news-img img{
+    width: 145px;
+    height: 95px;
+}
+
+.news_date {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed #9b9b9b;
+    padding: 5px 0;
+}
+
+.news_date p{
+    font-size: 13px;
+}
+
+.business {
+    background: url(../images/main/icon_business.png) no-repeat right 30px bottom 30px, 
+    linear-gradient(to top, #ff8800, rgb(255, 199, 94));
+    padding: 30px;
+    color: white;
+    width: 328px;
+    box-sizing: border-box;
+}
+
+.business p{
+    margin-top: 20px;
+    font-size: 15.7px;
+    font-weight: bold;
+}
+
+.business_detail {
+    margin-top: 30px;
+}
+
+.business_detail h2{
+    width: 110px;
+    font-size: 18px;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.493);
+}
+
+.recruit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to top, rgb(0, 132, 255), skyblue);
+    padding: 30px;
+    color: white;
+    margin-top: 20px;
+}
+
+.recruit-detail {
+  width: 200px;
+}
+
+.recruit-detail h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.recruit-detail p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.recruit h1 {
+    margin-bottom: 30px;
+}
+
+.recruit ul {
+    display: flex;
+    flex: 2;
+    justify-content: center;
+    gap: 60px;
+    text-align: center;
+    margin-left: 40px;
+}
+
+.recruit ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.recruit ul li:nth-child(2) {
+    padding-top: 20px;
+}
+
+.movie{
+    background-image: url(../images/main/pr_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 328px;
+    height: 200px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.movie h1{
+    padding: 30px;
+    color: white;
+}
+
+.movie img{
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    margin-left: -25px;
+}
+
+.investment {
+    width: 328px;
+    margin-top: 20px;
+    background: url(../images/main/icon_investment.png) no-repeat right 30px bottom 30px,
+    linear-gradient(to top, green, rgb(214, 255, 180));
+    padding: 30px;
+    color: white;
+    box-sizing: border-box;
+}
+
+.investment p{
+    font-size: 15.7px;
+    margin: 30px 0;
+}
+
+.investment_detail {
+    margin-top: 35px;
+}
+
+.investment_detail h2{
+    width: 110px;
+    font-size: 18px;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.37);
+}
+
+#footer {
+    text-transform: uppercase;
+    border-top: 1px solid #ddd;
+}
+
+.inner_footer {
+    width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.left-foot {
+    display: flex;
+    gap: 50px;
+}
+
+select{
+    display: block;
+    padding: 6px 10px;
+    outline: none;
+    border-radius: 3px;
+}
+
+#family-site option{
+    box-shadow: 0 5px 5px black;
+}
