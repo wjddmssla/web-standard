@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* animation */
+@keyframes motion{
+    0%{
+        background-color: red;
+        top: 0;
+        left: 0;
+    }
+    25%{
+        background-color: rgb(255, 133, 133);
+        top: 0;
+        left: 600px;
+    }
+    50% {
+        background-color: rgb(255, 172, 172);
+        top: 600px;
+        left: 600px;
+    }
+    75%{
+        background-color: rgb(255, 207, 207);
+        top: 600px;
+        left: 0;
+    }
+    100%{
+        background-color: rgb(255, 255, 255);
+        top: 0;
+        left: 0;
+    }
+}
+
+div {
+    width: 800px;
+    height: 800px;
+    border: 3px solid black;
+    margin: 100px auto;
+    position: relative;
+}
+
+p{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: absolute;
+    top:0;
+    left: 0;
+    animation: motion 5s infinite;
+}
+
