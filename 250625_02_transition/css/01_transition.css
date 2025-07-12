@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    width: 500px;
+    height: 500px;
+    margin: 300px auto;
+    /* A keyframe */
+    background-color: violet;
+    transform: rotate(0deg);
+    transition: all 1s ;
+}
+
+div:hover {
+    /* B keyframe */
+    background-color: skyblue;
+    transform: rotate(45deg);
+    transition: all 1s ;
+}
+
