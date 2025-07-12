@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "나눔고딕";
+    font-size: 13px;
+    line-height: 1.5em;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+#main-wrap {
+    min-width: 1200px;
+}
+
+.line_w{
+    background-color: white;
+    width: 30px;
+    height: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.line_o{
+    background-color: #f37339;
+    width: 30px;
+    height: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+#footer {
+    background-color: #242728;
+}
+
+.copyright{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.copyright p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 30px 0;
+}

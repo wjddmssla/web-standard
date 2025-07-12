@@ -1,0 +1,165 @@
+#main {
+    background-image: url(../images/bg_index.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between
+}
+
+.gnb {
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+.gnb li a{
+    display: block;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0px;
+}
+
+.gnb li a:hover{
+    border-bottom: 5px solid white;
+}
+
+.banner {
+    width: 1170px;
+    height: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner h1,p {
+    color: white;
+    text-shadow: 0 0 10px rgb(0,0,0,0.2);
+}
+
+.banner h1{
+    font-size: 60px;
+    line-height: 1.1em;
+    margin-bottom: 80px;
+    margin-top: 20px;
+}
+
+.banner p{
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+#container {
+    background-color: #f37339;
+}
+
+.philosophy {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 100px 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.philosophy h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.philosophy ul{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.philosophy ul li{
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.philosophy ul li h2{
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+.history {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.history h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #f37339;
+}
+
+.history-img {
+    margin-top: 100px;
+}
+
+#section2 {
+    background-color: #f37339;
+}
+
+.wzd {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wzd h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.mobile {
+    width: 500px;
+    margin-left: -100px;
+}
+
+.mobile img {
+    width: 100%;
+}
+
+.detail {
+    display: flex;
+    gap: 80px;
+    margin-top: 80px;
+}
+
+.detail p {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    font-weight: lighter;
+}
+
+
+
