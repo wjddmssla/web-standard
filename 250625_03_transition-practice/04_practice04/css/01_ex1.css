@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    width: 125px;
+    height: 300px;
+    border: 3px solid black;
+    border-top: none;
+    margin: 100px auto;
+    display: flex;
+    align-items: flex-end;
+
+}
+
+p {
+    width: 125px;
+    height: 230px;
+    background-color: skyblue;
+    transform: scaleY(0);
+    transform-origin: center bottom;
+    transition: all 1s;
+}
+
+div:hover p{
+    transform: scale(1);
+    transition: all 1s;
+}

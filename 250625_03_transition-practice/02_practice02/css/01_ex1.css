@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    margin: 100px auto;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+p {
+    border-radius: 50%;
+    overflow: hidden;
+    transform: translate();
+    transition: all 1s;
+}
+
+p:hover {
+    transform: translate(20px, -10px);
+}
+
+p img {
+    display: block;
+}

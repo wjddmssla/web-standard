@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    width: 200px;
+    margin:  100px auto;
+    perspective: 20000px;
+}
+
+p {
+    border-radius: 50%;
+    overflow: hidden;
+    transform: rotateY(0deg);
+    transition: transform 1s;
+}
+
+p:hover {
+    transform: rotateY(360deg);
+}
+
+p img {
+    display: block;
+}
