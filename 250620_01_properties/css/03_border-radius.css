@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    width: 500px;
+    height: 500px;
+    margin: 100px auto;
+}
+
+.box1 {
+    background-color: blueviolet;
+    border-radius: 100px;
+}
+
+.box2 {
+    background-color: rgb(174, 102, 241);
+    border-radius: 100px 0;
+}
+
+.box3 {
+    background-color: rgb(197, 149, 243);
+    border-radius: 100px 0 50px ;
+}
+
+.box4 {
+    background-color: rgb(216, 193, 238);
+    border-radius: 100px 0 50px 200px;
+}
+
+.box5 {
+    background-color: rgb(45, 187, 140);
+    border-radius: 50%;
+}

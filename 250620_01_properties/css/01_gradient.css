@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    width: 500px;
+    height: 500px;
+    margin: 100px auto;
+}
+
+.box1 {
+    background: linear-gradient(45deg, yellow, orange);
+}
+
+.box2{
+    background: radial-gradient(yellow, orange);
+}
+
+.box3 {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#cedbe9+0,aac5de+17,6199c7+50,3a84c3+51,419ad6+59,4bb8f0+71,3a8bc2+84,26558b+100;Blue+Gloss */
+    background: radial-gradient(ellipse at center,  #cedbe9 0%,#aac5de 17%,#6199c7 50%,#3a84c3 51%,#419ad6 59%,#4bb8f0 71%,#3a8bc2 84%,#26558b 100%); 
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.box4 {
+    background: no-repeat url(../images/product.png) center, linear-gradient(80deg, pink, blueviolet);
+}
+
