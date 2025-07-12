@@ -1,0 +1,146 @@
+.img {
+    text-align: center;
+}
+
+.collection {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.collection h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.collection p{
+    margin-bottom: 30px;
+}
+
+.collection a{
+    display: inline-block;
+    padding: 10px 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 0 5px 0 5px;
+}
+
+.collection a:hover {
+    background-color: black;
+    color: white;
+}
+
+.guide {
+    background-image: url(../images/sub/wlp_p4_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 700px;
+}
+
+.text {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.text h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 30px;
+    padding-top: 80px;
+}
+
+.text a{
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    margin: 50px 5px 0 5px;
+}
+
+.text a:hover {
+    background-color: white;
+    color: black;
+}
+
+.running {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.running h2{
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.running ul{
+    display: flex;
+    gap: 10px;
+}
+
+.running ul li a img{
+    width: 100%;
+}
+
+.running ul li a:hover {
+    opacity: 0.6;
+}
+
+.sportswear {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.sportswear h2{
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.sportswear ul{
+    display: flex;
+    gap: 10px;
+}
+
+.sportswear ul li {
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 346px;
+}
+
+.sportswear ul li:nth-child(1) {
+    background-image: url(../images/sub/wlp_p6_01.jpg);
+}
+
+.sportswear ul li:nth-child(2) {
+    background-image: url(../images/sub/wlp_p6_02.jpg);
+}
+
+.sportswear ul li:nth-child(3) {
+    background-image: url(../images/sub/wlp_p6_03.jpg);
+}
+
+.sportswear ul li:nth-child(4) {
+    background-image: url(../images/sub/wlp_p6_04.jpg);
+}
+
+.sportswear ul li a {
+    display: inline-block;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.app {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+    margin-bottom: 100px;
+}
+
+.app img {
+    width: 585px;
+}
