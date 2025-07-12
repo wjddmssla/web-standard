@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    margin: 200px;
+    float: left;
+}
+
+p {
+    height: 100%;
+    background-color: rgba(255,0,0,0.3);
+}
+
+.box1 {
+    transform: translateX(100px);
+}
+
+.box2 {
+    transform: translateY(100px);
+}
+
+.box3 {
+    transform: translate(80px, 50px);
+}
+
+.box4 {
+    transform: scaleX(0.7);
+}
+
+.box5 {
+    transform: scaleY(1.5);
+}
+
+.box6 {
+    transform: scale(1.5, 0.5);
+}
+
+.box7 {
+    transform: scale(1.5, 0.5);
+    transform-origin: left center;
+}
+
+.box8 {
+    transform: rotate(45deg);
+}
+
+.box9 {
+    transform: rotate(45deg);
+    transform-origin: right bottom;
+}
+
+.box10 {
+    transform: skew(20deg, 30deg);
+}
+
+.perspective1 {
+    perspective: 1000px;
+}
+
+.box11 {
+    transform: rotateY(45deg);
+}
+
+.perspective2 {
+    perspective: 100px;
+}
+
+.box12{
+    transform: translateZ(300px);
+}
+
