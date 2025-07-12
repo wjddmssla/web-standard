@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: "나눔고딕";
+    font-size: 16px;
+    line-height: 22px;
+    background-color: rgb(255, 226, 253);
+}
+
+#header {
+    width: 1284px;
+    margin: 30px auto;
+}
+
+#header ul {
+    display: flex;
+}
+
+#header ul li a{
+    display: block;
+    color: gray;
+    font-size: 10px;
+}
+
+#header ul li a::after {
+    content: "/";
+    padding: 0 5px;
+}
+
+#header h1 {
+    font-weight: 400;
+    font-size: 40px;
+    margin-top: 15px;
+}
+
+#wrap {
+    width: 1284px;
+    margin: 0 auto;
+}
+
+.artist {
+    display: flex;
+    gap: 24px;
+}
+
+.img-wrap {
+    width: 630px;
+}
+
+.img-wrap img{
+    display: block;
+    width: 100%;
+
+    transform: scale(1);
+    transition: all 1s;
+}
+
+.cover-wrap:hover .img-wrap img {
+    transform: scale(1.1);
+}
+
+.cover-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.cover {
+    background-color: rgb(255, 199, 248,0.7);
+    text-align: center;
+    color: white;
+    
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    transition: all 1s;
+}
+
+.profile {
+    transform: translateY(500px);
+    transform-origin: center bottom;
+    transition: all 1s;
+}
+
+.profile a:hover{
+    font-weight: bold;
+}
+
+.cover-wrap:hover .profile{
+    transform: translateY(0);
+    transform-origin: center bottom;
+    transition: all 1s;
+}
+
+.cover-wrap:hover .cover{
+    opacity: 1;
+    transition-property: all 1s;
+}
+
+.cover h2{
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+.cover h2, .cover a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover a:not(.sns li a)::after {
+    content: url(../images/btn_right_chevron.svg);
+    padding-left: 5px;
+    padding-top: 7px;
+}
+
+.sns {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    position: absolute;
+    bottom: 30px;
+}
+
+.sns li{
+    width: 60px;
+}
+
+.sns li a img{
+    width: 100%;
+}
+
+

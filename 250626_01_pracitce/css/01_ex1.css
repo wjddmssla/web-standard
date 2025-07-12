@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: "나눔고딕";
+    font-size: 16px;
+    line-height: 22px;
+}
+
+#wrap {
+    width: 820px;
+    margin: 50px auto;
+    background-color: beige;
+}
+
+#wrap ul {
+    display: flex;
+    gap: 20px;
+    text-align: center;
+}
+
+.img-wrap img {
+    width: 100%;
+    display: block;
+
+    transform: scale(1);
+    transition: all 1s;
+}
+
+.cover-wrap:hover .img-wrap img{
+    transform: scale(1.2);
+}
+
+.cover-wrap {
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cover {
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    transition: all 1s;
+}
+
+.cover-wrap:hover .cover {
+    opacity: 1;
+    transition: all 1s;
+}
+
+.cover p{
+    transform: translateY(-100px);
+    transition: all 1s;
+}
+
+.cover-wrap:hover .cover p{
+    transform: translateY(0);
+    transition: all 1s;
+}
+
+.cover a{
+    border: 1px solid white;
+    display: block;
+    color: white;
+    padding: 6px 10px;
+    margin-top: 20px;
+    transform: translateY(100px);
+    transition: all 1s;
+}
+
+.cover a:hover {
+    background-color: white;
+    color: black;
+}
+
+.cover-wrap:hover .cover a{
+    transform: translateY(0);
+    transition: all 1s;
+}
+
