@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouseEvent, mouseEnter</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            text-align: center;
+            background-color: pink;
+            border: 1px solid rgb(255, 0, 85);
+            padding: 20px 0;
+        }
+
+        p {
+            padding: 50px 0;
+        }
+
+        button {
+            display: inline-block;
+            padding: 7px 15px;
+            background-color: rgb(255, 0, 85);
+            border: none;
+            border-radius: 7px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: rgb(255, 104, 154);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <button id="down">down</button>
+        <button id="up">up</button>
+        <button id="toggle">toggle</button>
+    </div>
+
+    <div id="panel">
+        <p>Hello, World!</p>
+    </div>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    
+    <script>
+        $('#panel').hide();
+
+        $("#down").mouseenter(function(){
+            $("#panel").slideDown()
+        });
+
+        $("#up").mouseleave(function(){
+            $("#panel").slideUp()
+        });
+
+        $("#toggle").mouseenter(function(){
+            $("#panel").slideDown()
+        })
+
+        $("#toggle").mouseleave(function(){
+            $("#panel").slideUp()
+        })
+    </script>
+</body>
+</html>

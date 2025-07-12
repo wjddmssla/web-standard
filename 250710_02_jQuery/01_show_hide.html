@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="hide">hide</button>
+    <button id="show">show</button>
+    <p>If you click the hide button, the text disappears.</p>
+
+    <!-- 오픈소스 -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+    <!-- 제어구문 -->
+     <script>
+        $("#hide").click(function(){
+            $("p").hide();
+        });
+
+        $("#show").click(function(){
+            $("p").show();
+        });
+     </script>
+</body>
+</html>

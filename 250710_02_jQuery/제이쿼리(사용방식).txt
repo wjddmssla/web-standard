@@ -1,0 +1,11 @@
+google CDN
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+microsoft CDN
+<script src="http://ajax.microsoft.com/ajax/jQuery/jquery-3.7.1.min.js.“></script>
+
+최신버전사용
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+다운로드 방식
+<script src="jquery-3.7.1.min.js"></script>

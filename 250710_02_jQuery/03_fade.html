@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fade</title>
+</head>
+<body>
+    <button class="in">fadeIn</button>
+    <button class="out">fadeOut</button>
+    <button class="toggle">fadeToggle</button>
+    <p>
+        천천히 나타나고 사라진다.
+    </p>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+    <script>
+        $('.out').click(function() {
+            $("p").fadeOut(1000);
+        });
+
+        $('.in').click(function() {
+            $("p").fadeIn(0);
+        });
+
+        $('.toggle').click(function() {
+            $("p").fadeToggle(0);
+        });
+    </script>
+</body>
+</html>
