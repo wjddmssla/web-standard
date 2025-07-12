@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS button</title>
+</head>
+<body>
+    <button onclick="show()">보인다</button>
+    <button onclick="hide()">안보인다</button>
+    <p id="text">
+        '안보인다' 버튼을 누르면 글자가 사라지고, <br>
+        '보인다' 버튼을 누르면 글자가 나타난다.
+    </p>
+
+    <script>
+        function hide(){
+            document.getElementById('text').style.display='none';
+        }
+
+        function show(){
+            document.getElementById('text').style.display='block';
+        }
+    </script>
+</body>
+</html>
