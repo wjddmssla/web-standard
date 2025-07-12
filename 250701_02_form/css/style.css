@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#form_wrap {
+    width: 400px;
+    margin: 100px auto;
+}
+
+.search_bar{
+    border: 3px solid green;
+    padding: 10px 30px 10px 60px;
+    border-radius: 30px;
+}
+
+.search_bar:hover {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.search_bar input{
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: red;
+}
+
+.search_bar input::placeholder {
+    color: #ddd;
+    font-size: 14px;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid red;
+    outline: none;
+    padding: 30px;
+    box-sizing: border-box;
+    resize: vertical;
+    overflow: auto;
+}
