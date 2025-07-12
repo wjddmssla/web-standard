@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #111111;
+}
+
+#nav{
+    width: 1000px;
+    margin: 0 auto;
+    height: 80px;
+    background-color: #eee;   
+}
+
+.logo_wrap{
+    position: relative;
+}
+
+.logo_wrap h1{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);  
+}
+
+.gnb{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 30px;
+}
+
+.gnb li a{
+    display: block;
+    margin: 0 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 26px;
+}
+
+.submenu{
+    background-color: aqua;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    padding: 30px 0 80px;
+}
+
+.inner_submenu{
+    width: 1000px;
+    margin: 0 auto;
+    background-color: yellow;
+}
