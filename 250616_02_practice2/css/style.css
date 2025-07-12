@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "나눔고딕";
+    font-size: 16px;
+    line-height: 26px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.head {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: right;
+}
+
+.head li a {
+    display: block;
+    color: rgb(201, 201, 201);
+    padding: 5px 10px;
+}
+
+#top-nav {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gnb {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gnb> li {
+    position: relative;
+}
+
+.gnb > li > a {
+    display: block;
+    font-size: 20px;
+    color: black;
+    padding: 20px 30px;
+}
+
+.gnb li a:hover {
+    color: #1281b5;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.submenu li a {
+    font-size: 15px;
+    background-color: #ffffff31;
+    display: block;
+    color: black;
+    padding: 10px;
+}
+
+.submenu li a:hover {
+    background-color: white;
+    color: #1281b5;
+}
+
+.gnb li:hover .submenu{
+    display: block;
+}
+
+#main-container {
+    background-image: url(../images/main_banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+}
+
+#container {
+    background-color: rgb(228, 228, 228);
+    height: 400px;
+}
+
+.content {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 51px 0;
+}
+
+.left {
+    background-image: url(../images/main_thumb_01.png);
+    background-repeat: no-repeat;
+    width: 640px;
+    height: 298px;
+    box-sizing: border-box;
+}
+
+.right{
+    width: 640px;
+    background-image: url(../images/main_thumb_02.png);
+    background-repeat: no-repeat;
+    height: 298px;
+    box-sizing: border-box;
+}
+
+.text {
+    padding-left: 350px;
+    padding-top: 50px;
+}
+
+.text p {
+    color: rgb(173, 173, 173);
+    margin-bottom: 20px;
+}
+
+.text h1 {
+    font-size: 27px;
+    margin-bottom: 70px;
+    color: rgb(82, 82, 82);
+}
+
+.text a {
+    display: inline-block;
+    border: 1px solid rgb(114, 114, 114);
+    color: rgb(114, 114, 114);
+    padding: 10px 20px;
+}
+
+.text a:hover {
+    background-color: white;
+    color: black;
+}
+
+.wrap {
+    width: 1320px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    color: rgb(68, 68, 68);
+}
+
+.information1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.information2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card1, .card2, .card3, .card4 {
+    display: flex;
+    justify-content: space-between;
+    width: 645px;
+    border: 1px solid rgb(230, 230, 230);
+}
+
+.card1, .card2 {
+    margin-bottom: 20px;
+}
+
+.card {
+    padding: 30px;
+    text-align: start;
+}
+
+.card h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.card p {
+    color: gray;
+}
+
+.more {
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+.more a {
+    padding: 10px 70px;
+    display: inline-block;
+    color: white;
+    background-color: #33acbf;
+}
+
+.more a:hover {
+    background-color: rgb(10, 77, 77);
+}
+
+#footer {
+    background-color: #33acbf;
+    font-weight: 250;
+}
+
+.top-foot {
+    background-color: #3499a9;
+}
+
+.introduce {
+    width: 1320px ;
+    margin: 0 auto;
+}
+
+.site {
+    display: flex;
+    justify-content: space-around;
+}
+
+.site li a{
+    display: block;
+    padding: 10px;
+    color: white;
+}
+
+.site li a:hover {
+    text-decoration: underline;
+}
+
+.under {
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+}
+
+.under p {
+    color: white;
+}
