@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background img</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .section {
+            height: 620px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #section1 {
+            background-image: url(images/bg1.jpg);
+        }
+        
+        #section2 {
+            background-image: url(images/bg2.jpg);
+        }
+        
+        #section3 {
+            background-image: url(images/bg3.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        
+        #section4 {
+            background-image: url(images/bg4.jpg);
+        }
+
+        #section5 {
+            height: 800px;
+            width: 800px;
+            border: 5px solid #000;
+            margin: 100px auto;
+            background: url(images/bg1.jpg) no-repeat center;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div id="section1" class="section"></div>
+    <div id="section2" class="section"></div>
+    <div id="section3" class="section"></div>
+    <div id="section4" class="section"></div>
+    <div id="section5"></div>
+</body>
+</html>
