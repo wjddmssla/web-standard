@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#tab{
+    width: 400px;
+    margin: 50px auto;
+    /* background-color: skyblue; */
+}
+
+.board{
+    display: flex;
+    position: relative;
+}
+
+.board> li.on >a{
+    background-color: blue;
+}
+
+.board> li> a{
+    background-color: skyblue;
+    display: block;
+    padding: 10px 0;
+    width: 120px;
+    text-align: center;
+    margin-right: 10px;
+    border-radius: 10px 10px 0 0;
+    color: #fff;
+}
+.board> li> div{
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 43px;
+    left: 0;
+}
+.board> li.on> div{    
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    border: 1px solid #666;
+    height: 150px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.gallery ul{
+    display: flex;
+    justify-content: space-between;
+}

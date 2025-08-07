@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* 애니메이션 만들기 */
+@keyframes textflow1 {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+@keyframes textflow2 {
+    from {
+        transform: translateX(-50%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+#flow1,
+#flow2{
+    background-color: orangered;
+    color: #fff;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+.track{
+    font-size: 100px;
+    font-weight: bold;
+    white-space: nowrap;   
+}
+.ani1{
+    animation: textflow1 10s linear infinite;
+}
+.ani2{
+    animation: textflow2 10s linear infinite;
+}

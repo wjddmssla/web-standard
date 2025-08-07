@@ -1,0 +1,88 @@
+<!doctype html> 
+<html> 
+	<head> 
+		<title>hotel OARUM</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=1320">
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><!--aos js 연결-->		
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script><!-- 달력 -->
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<link rel="stylesheet" href="css/jquery-ui.css">
+		<link href="css/index.css" rel="stylesheet" type="text/css">
+		
+	</head>
+	<body>
+	
+			<div id="main_banner">
+
+				<div class="reservation">
+					
+					<div class="select">
+						<input type="text" id="datepicker" placeholder="CHECK IN" class="day">
+						<input type="text" id="datepicker1" placeholder="CHECK OUT" class="day">
+						<select>
+							<option>성인</option>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+							<option>6</option>
+							<option>7</option>
+						</select>
+						<select>
+							<option>아동</option>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+							<option>6</option>
+							<option>7</option>
+						</select>
+						<select class="pet_select">
+							<option>반려동물</option>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+						</select>
+					</div>
+					<div class="search"><a href="sub4.html">검색</a></div>
+				</div>
+			</div>
+
+	<script>
+		AOS.init(); //에오스
+		
+		//달력 START
+		$( function() {
+		$( "#datepicker" ).datepicker();
+		} );
+		$.datepicker.setDefaults({
+		dateFormat: 'yy-mm-dd' //Input Display Format 변경
+		});
+		$.datepicker.setDefaults({
+		monthNamesShort: ['1','2','3','4','5','6','7','8','9','10','11','12'] //달력의 월 부분 텍스트
+		,monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 Tooltip 텍스트
+		,dayNamesMin: ['일','월','화','수','목','금','토'] //달력의 요일 부분 텍스트
+		,dayNames: ['일요일','월요일','화요일','수요일','목요일','금요일','토요일'] //달력의 요일 부분 Tooltip 텍스트
+		});
+		$( function() {
+		$( "#datepicker1" ).datepicker();
+		} );
+		$.datepicker.setDefaults({
+		dateFormat: 'yy-mm-dd' //Input Display Format 변경
+		});
+		$.datepicker.setDefaults({
+		monthNamesShort: ['1','2','3','4','5','6','7','8','9','10','11','12'] //달력의 월 부분 텍스트
+		,monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 Tooltip 텍스트
+		,dayNamesMin: ['일','월','화','수','목','금','토'] //달력의 요일 부분 텍스트
+		,dayNames: ['일요일','월요일','화요일','수요일','목요일','금요일','토요일'] //달력의 요일 부분 Tooltip 텍스트
+		});
+		//달력 END
+		
+		
+	</script>
+	</body>
+</html>

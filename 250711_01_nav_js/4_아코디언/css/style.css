@@ -1,0 +1,55 @@
+/* 여백초기화 */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* 블릿없애기 */
+ul,ol{
+    list-style: none;
+}
+/* 링크설정 */
+a{
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #111111;
+}
+#header{
+    width: 1000px;
+    background-color: #eee;
+    margin: 0 auto;
+}
+.nav{
+    width: 200px;
+}
+.gnb{
+    padding-top: 30px;
+}
+.gnb> li> a{
+    display: block;
+    font-weight: bold;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #969820;
+    color: #fff;
+    border-top: 1px solid rgba(255,255,255,0.6);
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+.gnb> li> a:hover{
+    color: #51671e;
+}
+.submenu li a{
+    background-color: yellowgreen;
+    display: block;
+    padding: 6px 10px;
+    border-top: 1px solid rgba(255,255,255,0.6);
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    color: #fff;
+}
+.submenu li a:hover{
+    background-color: #6d9321;
+}

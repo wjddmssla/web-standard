@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Six+Caps&display=swap');
+
+:root {
+    --main-font: "Six Caps";
+    --sub-font: 'Poppins'
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #111
+}
+
+ul,
+li,
+dl,
+dt,
+dd,
+p,
+span,
+h3,
+h2 {
+    margin: 0;
+    padding: 0
+}
+
+a {
+    text-decoration: none
+}
+
+ul,
+li {
+    list-style: none
+}
+
+*,
+:after,
+:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+#inc01 {
+    padding: 100px 0
+}
+
+#inc01 .gsap_cont {
+    opacity: 0;
+    position: relative;
+    margin: auto;
+    width: 90%
+}
+
+#inc01 .gsap_cont ul {
+    overflow: hidden
+}
+
+#inc01 .gsap_cont ul li {
+    position: relative
+}
+
+#inc01 .gsap_cont ul li img {
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+    transition: all .3s
+}
+
+#inc01 .gsap_cont ul li .tit {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+#inc01 .gsap_cont ul li .tit h2 {
+    font-size: 50px;
+    font-weight: 400;
+    font-family: var(--main-font);
+    line-height: 190px;
+    color: #fff
+}
+
+#inc01 .gsap_cont ul li .tit div {
+    padding-left: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: var(--sub-font);
+    color: #fff
+}
+
+#inc01 .gsap_cont .txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px
+}
+
+#inc01 .gsap_cont .txt>div {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--sub-font);
+    color: rgb(255, 255, 255, 0.2);
+    background: linear-gradient(to right, #fff, #fff) no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 0%;
+    word-break: keep-all
+}
+
+#inc01 .gsap_cont .txt a {
+    overflow: hidden;
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateY(30px);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    width: 155px;
+    height: 50px;
+    border: 2px solid #e1e1e1;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--sub-font);
+    color: #fff;
+    transition: all .3s
+}
+
+#inc01 .gsap_cont ul li:hover img {
+    filter: brightness(0.6)
+}
+
+#inc01 .gsap_cont .txt a:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    height: 0%;
+    background-color: #fff;
+    transition: all .3s
+}
+
+#inc01 .gsap_cont .txt a:hover {
+    border: 2px solid transparent;
+    color: #000
+}
+
+#inc01 .gsap_cont .txt a:hover:after {
+    height: 100%
+}

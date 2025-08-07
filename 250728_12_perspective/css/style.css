@@ -1,0 +1,41 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul,ol{
+    list-style: none;
+}
+
+.card_in{
+    width: 1320px;
+    margin: 100px auto 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card {
+    display: inline-grid; 
+    color: white;
+    transition: transform 0.3s;
+    transform: perspective(800px) rotateY(0deg);
+    transform-style: preserve-3d;
+}
+.card:hover{
+    transform: perspective(800px) rotateY(180deg);
+} 
+.card > * {
+    grid-area: 1 / 1 / 1 / 1;
+    width: 346px;
+    height: 509px;
+    padding: 30px;
+    border-radius: 8px;
+    backface-visibility: hidden;
+}
+.back { 
+    transform: rotateY(180deg); 
+}

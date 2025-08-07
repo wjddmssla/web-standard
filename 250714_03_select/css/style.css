@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#select{
+    width: 160px;
+    margin: 100px auto;
+    position: relative;
+}
+
+.select_btn{
+    border: 1px solid #666;
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+.option{
+    border: 1px solid #666;
+    border-top: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.option p a{
+    display: block;
+    background-color: #eee;
+    padding: 8px 14px;
+}
+
+.option p a:hover{
+    background-color: #ddd;
+}
+
+.select_btn span img{
+    transition: transform 0.3s;
+}
+
+.turn{
+    perspective: 2000px;
+}
+
+.turn img{
+    transform: rotateX(180deg);    
+}

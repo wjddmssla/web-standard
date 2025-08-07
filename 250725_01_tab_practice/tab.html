@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header></header>
+    <div id="tab">
+        <section class="gallery-sec">
+            <ul class="filter-wrapper clearfix">
+                <li class="see">
+                    <a href="#" data-filter="*" class="selected">전체</a>
+                    <div class="number">전체 보여주기5</div>
+                </li>
+                <li>
+                    <a href="#" data-filter=".on">진행중</a>
+                    <div class="number">진행 중인 이벤트3</div>
+                </li>
+                <li>
+                    <a href="#" data-filter=".off">종료</a>
+                    <div class="number">종료된 이벤트2</div>
+                </li>
+            </ul>
+            <!-- iso box section -->
+            <div class="iso-box-wrapper">
+                <div class="iso-box on">
+                    <div class="gallery-thumb">
+                        <img src="img/offers1.jpg" class="fluid-img" alt="Gallery">
+                    </div>
+                </div>
+                <div class="iso-box on">
+                    <div class="gallery-thumb">
+                        <img src="img/offers2.jpg" class="fluid-img" alt="Gallery">
+                    </div>
+                </div>
+                <div class="iso-box off">
+                    <div class="gallery-thumb">
+                        <img src="img/offers3.jpg" class="fluid-img" alt="Gallery">
+                    </div>
+                </div>
+                <div class="iso-box on">
+                    <div class="gallery-thumb">
+                        <img src="img/offers4.jpg" class="fluid-img" alt="Gallery">
+                    </div>
+                </div>
+                <div class="iso-box off">
+                    <div class="gallery-thumb">
+                        <img src="img/offers4.png" class="fluid-img" alt="Gallery">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer></footer>
+
+    <!-- tab -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/isotope.min.js"></script>
+    <script src="js/nivo-lightbox.min.js"></script>
+    <script src="js/core.js"></script>
+    <script>
+        $(".clearfix li a").click(function(){
+            $(this).parent().addClass('see').siblings().removeClass('see');
+        });
+    </script>
+</body>
+
+</html>

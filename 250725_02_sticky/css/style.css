@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.section{
+    height: 1000px;
+    background-color: antiquewhite;
+}
+#container{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+}
+.content{
+    width: 700px;
+    height: 500px;
+    background-color: yellow;
+    position: sticky;
+    top: 100px;
+    left: 0;
+}
+.aside{
+    width: 300px;
+}
+.aside div{
+    height: 300px;
+}
+.box1{
+    background-color: pink;
+}
+.box2{
+    background-color: orange;
+}
+.box3{
+    background-color: skyblue;
+}
+.box4{
+    background-color: yellowgreen;
+}

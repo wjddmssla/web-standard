@@ -1,0 +1,32 @@
+﻿<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jQuery 이미지 슬라이드</title>
+	<link href="css/slider.css" type="text/css" rel="stylesheet" />
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.slider.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$('.imgSlide img').slidingGallery({ useCaptions: true, container: $('.imgSlide') });
+		});
+	</script>
+</head>
+<body>
+	<div class="wrap">
+		<div class="imgSlide">
+			<img src="images/1.jpg" alt="1"/>
+			<img src="images/1.jpg" alt="1"/>
+			<img src="images/1.jpg" alt="1"/>
+			<img src="images/1.jpg" alt="1" class="start"/>
+			<img src="images/1.jpg" alt="1"/>
+			<img src="images/1.jpg" alt="1"/>
+			<img src="images/1.jpg" alt="1"/>
+			<img src="images/1.jpg" alt="1"/>
+			<img src="images/1.jpg" alt="1"/>
+			<img src="images/1.jpg" alt="1"/>
+			<img src="images/1.jpg" alt="1"/>
+		</div>
+	</div>
+</body>
+</html>

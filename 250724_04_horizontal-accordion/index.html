@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .accordion {
+            width: 100%;
+            max-width: 1080px;
+            height: 350px;
+            overflow: hidden;
+            margin: 50px auto;
+        }
+
+        .accordion ul {
+            width: 100%;
+            display: table;
+            table-layout: fixed;
+            margin: 0;
+            padding: 0;
+        }
+
+        .accordion ul li {
+            display: table-cell;
+            vertical-align: bottom;
+            position: relative;
+            width: 16.666%;
+            height: 350px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            transition: all 500ms ease;
+        }
+
+        .accordion ul li div {
+            display: block;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .accordion ul li div a {
+            display: block;
+            height: 350px;
+            width: 100%;
+            position: relative;
+            z-index: 3;
+            vertical-align: bottom;
+            padding: 15px 20px;
+            box-sizing: border-box;
+            color: #fff;
+            text-decoration: none;
+            font-family: Open Sans, sans-serif;
+            transition: all 200ms ease;
+        }
+
+        .accordion ul li div a * {
+            opacity: 0;
+            margin: 0;
+            width: 100%;
+            text-overflow: ellipsis;
+            position: relative;
+            z-index: 5;
+            white-space: nowrap;
+            overflow: hidden;
+            -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+            -webkit-transition: all 400ms ease;
+            transition: all 400ms ease;
+        }
+
+        .accordion ul li div a h2 {
+            font-family: Montserrat, sans-serif;
+            text-overflow: clip;
+            font-size: 24px;
+            text-transform: uppercase;
+            margin-bottom: 2px;
+            top: 160px;
+        }
+
+        .accordion ul li div a p {
+            top: 160px;
+            font-size: 13.5px;
+        }
+
+        .accordion ul li:nth-child(1) {
+            background-image: url("https://unsplash.it/650/350?image=675");
+        }
+
+        .accordion ul li:nth-child(2) {
+            background-image: url("https://unsplash.it/650/350?image=674");
+        }
+
+        .accordion ul li:nth-child(3) {
+            background-image: url("https://unsplash.it/650/350?image=670");
+        }
+
+        .accordion ul li:nth-child(4) {
+            background-image: url("https://unsplash.it/650/350?image=672");
+        }
+
+        .accordion ul li:nth-child(5) {
+            background-image: url("https://unsplash.it/650/350?image=671");
+        }
+
+        .accordion ul li:nth-child(6) {
+            background-image: url("https://unsplash.it/650/350?image=670");
+        }
+
+        .accordion ul:hover li {
+            width: 8%;
+        }
+
+        .accordion ul:hover li:hover {
+            width: 60%;
+        }
+
+        .accordion ul:hover li:hover a {
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        .accordion ul:hover li:hover a * {
+            opacity: 1;
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }
+    </style>
+    <link href="http://www.cssscript.com/wp-includes/css/sticky.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="accordion">
+        <ul>
+            <li>
+                <div> <a href="#">
+                        <h2>Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    </a> </div>
+            </li>
+            <li>
+                <div> <a href="#">
+                        <h2>Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    </a> </div>
+            </li>
+            <li>
+                <div> <a href="#">
+                        <h2>Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    </a> </div>
+            </li>
+            <li>
+                <div> <a href="#">
+                        <h2>Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    </a> </div>
+            </li>
+            <li>
+                <div> <a href="#">
+                        <h2>Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    </a> </div>
+            </li>
+            <li>
+                <div> <a href="#">
+                        <h2>Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    </a> </div>
+            </li>
+        </ul>
+    </div>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-46156385-1', 'cssscript.com');
+        ga('send', 'pageview');
+
+    </script>
+</body>
+
+</html>

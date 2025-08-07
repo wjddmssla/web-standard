@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Counter Up Demo</title>
+    <style>
+        span {
+            font-size: 66px;
+            margin-bottom: 1000px;
+            display: block;
+            font-weight: 400;
+            text-align: center;
+        }
+    </style>
+
+    
+</head>
+
+<body>
+
+    <div>
+        <span class="counter">52,147</span>
+        <span class="counter">1.9583</span>
+        <span class="counter">12345</span>
+    </div>
+    <script src="js/jquery-latest.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        });
+    </script>
+</body>
+
+</html>

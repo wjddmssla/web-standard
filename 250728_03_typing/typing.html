@@ -1,0 +1,62 @@
+<!doctype html> 
+<html> 
+<head> 
+	<title>타이핑효과내기</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<style>
+	
+		*{margin:0; padding:0;}
+		p.typing-txt{display: none;}
+  
+		/*커서가 깜빡거리는 효과부분 시작*/
+		.typing {  
+			/*position: absolute;*/ 
+			 display: inline-block; 
+			  animation-name: cursor; 
+			  animation-duration: 0.3s; 
+			  animation-iteration-count: infinite; 
+			}
+			@keyframes cursor{ 
+			  0%{border-right: 1px solid #fff} 
+			  50%{border-right: 1px solid #000} 
+			  100%{border-right: 1px solid #fff} 
+			}
+		/*커서가 깜빡거리는 효과부분 끝*/
+	</style>
+</head>
+<body> 
+		<p class="typing-txt"> 타이핑될 텍스트 입니다.</p> 
+		<p class="typing"></p> 
+	<script>
+		var typingBool = false; 
+			var typingIdx=0; 
+			var typingTxt = $(".typing-txt").text(); // 타이핑될 텍스트를 가져온다 
+			typingTxt=typingTxt.split(""); // 한글자씩 자른다. 
+			if(typingBool==false){ // 타이핑이 진행되지 않았다면 
+			   typingBool=true; 
+			   
+			   var tyInt = setInterval(typing,100); // 타이핑 스피드 설정 
+			 } 
+			 
+			 function typing(){ 
+			   if(typingIdx<typingTxt.length){ // 타이핑될 텍스트 길이만큼 반복 
+				 $(".typing").append(typingTxt[typingIdx]); // 한글자씩 이어준다. 
+				 typingIdx++; 
+			   } else{ 
+				 clearInterval(tyInt); //끝나면 반복종료
+				 
+			   } 
+			 }
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+	</script>
+</body>
+</html>

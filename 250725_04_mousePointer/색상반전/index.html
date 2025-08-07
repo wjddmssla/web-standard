@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+            color: #FFF;
+            font-family: 'Inter UI', sans-serif;
+        }
+
+        h1 {
+            font-weight: 500;
+            font-size: 8vw;
+            color: #FFF;
+        }
+
+        .circle {
+            width: 5vmax;
+            height: 5vmax;
+            background-color: #FFF;
+            position: absolute;
+            top: 60px;
+            left: 60px;
+            mix-blend-mode: difference;
+            border-radius: 50%;
+            will-change: transform;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Inter UI</h1>
+
+    <div class="circle"></div>
+    <script>
+        const circle = document.querySelector('.circle')
+
+        let mouseX = 0
+        let mouseY = 0
+
+        let circleX = 0
+        let circleY = 0
+
+        let speed = 0.06
+
+        const animate = () => {
+            let distX = mouseX - circleX
+            let distY = mouseY - circleY
+            let translatedValue = `translate3d(${circleX}px, ${circleY}px, 0 )`;
+
+            circleX = circleX + (distX * speed)
+            circleY = circleY + (distY * speed)
+
+            circle.style.transform = translatedValue;
+
+            requestAnimationFrame(animate)
+        }
+
+        animate()
+
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX - circle.offsetWidth / 4;
+            mouseY = e.clientY - circle.offsetHeight / 4;
+        })
+    </script>
+</body>
+
+</html>

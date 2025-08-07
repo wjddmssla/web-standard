@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+#slide{
+    width: 1200px;
+    margin: 0 auto;
+    height: 300px;
+    overflow: hidden;
+}
+
+#slide img{
+    display: block;
+}
