@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .header{
+            height: 100px;
+            background-color: orange;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 9;
+        }
+        .header_scrolled{
+            background-color: orangered;
+        }
+        #section1{
+            height: 1000px;
+            background-color: antiquewhite;
+        }
+        #section2{
+            height: 1000px;
+            background-color: #d1c0a9;
+        }
+    </style>
+</head>
+<body>
+    <div id="header" class="header"></div>
+    <div id="section1"></div>
+    <div id="section2"></div>
+
+     <script src="js/jquery-3.7.1.min.js"></script>
+     
+     <script>
+        $(window).scroll(function(){
+            if($(this).scrollTop() > 200){
+                $(".header").addClass("header_scrolled")
+            }else{
+                $(".header").removeClass('header_scrolled')
+            }
+        });
+     </script>
+</body>
+</html>

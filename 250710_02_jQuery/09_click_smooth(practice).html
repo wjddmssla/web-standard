@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            height: 1000px;
+            position: relative;
+        }
+        #section1{
+            background-color: pink;
+        }
+        #section2{
+            background-color: skyblue;
+        }
+        #section3{
+            background-color: yellow;
+        }
+        p{
+            background-color: orangered;
+            width: 100px;
+            height: 100px;
+            color: #fff;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        p:hover{
+            background-color: #ad2f01;
+        }
+        .down1,.down2{
+            position: absolute;
+            right: 30px;
+            top: 30px;
+        }
+        .top{
+            position: absolute;
+            right: 30px;
+            bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="section1">
+        <p class="down1">Down</p>
+    </div>
+    <div id="section2">
+        <p class="down2">Down</p>
+    </div>
+    <div id="section3">
+        <p class="top">Top</p>
+    </div>
+    
+     <script src="js/jquery-3.7.1.min.js"></script>
+     
+     <script>
+        $(".top").click(function(){
+            $("html,body").animate({
+                scrollTop:'0'
+            },1000)
+        });
+        $(".down1").click(function(){
+            $("html,body").animate({
+                scrollTop:'1000'
+            },500)
+        });
+        $(".down2").click(function(){
+            $("html,body").animate({
+                scrollTop:'2000'
+            },500)
+        });
+     </script>
+</body>
+</html>

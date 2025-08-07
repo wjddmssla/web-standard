@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            height: 1000px;
+        }
+        #section1{
+            background-color: pink;
+        }
+        #section2{
+            background-color: skyblue;
+        }
+        .top{
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: orangered;
+            width: 100px;
+            height: 100px;
+            color: #fff;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .top:hover{
+            background-color: #ad2f01;
+        }
+    </style>
+</head>
+<body>
+    <div id="section1"></div>
+    <div id="section2"></div>
+    <p class="top">Top</p>
+
+     <script src="js/jquery-3.7.1.min.js"></script>
+     
+     <script>
+        $(".top").click(function(){
+            $("body,html").animate({
+                scrollTop:'0'
+            },1000);
+        });
+        $(".top").hide();
+        $(window).scroll(function(){
+            if($(this).scrollTop()>500){
+                $(".top").fadeIn()
+            }else{
+                $(".top").fadeOut()
+            }
+        });
+     </script>
+</body>
+</html>
