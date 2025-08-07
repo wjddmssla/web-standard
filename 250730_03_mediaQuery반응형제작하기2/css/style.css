@@ -1,0 +1,233 @@
+/* 여백초기화 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 블릿없애기 */
+ul,
+ol {
+    list-style: none;
+}
+
+/* 링크설정 */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #111111;
+}
+
+/* 공통디자인 */
+/* header */
+#header {
+    width: 960px;
+    margin: 0 auto;
+    height: 280px;
+    padding: 20px 30px;
+    box-sizing: border-box;
+}
+
+.logo {
+    color: yellow;
+}
+
+/* header_banner */
+@media (min-width:601px) {
+    #header {
+        background-image: url(../images/bg.png);
+        background-position: center;
+    }
+}
+
+/* tablet */
+@media (max-width: 960px) {
+    #header {
+        width: 100%;
+        height: 150px;
+        padding: 50px 0px 0;
+        text-align: center;
+    }
+
+    .logo {
+        color: #ffffff;
+    }
+}
+
+/* mobile */
+@media (max-width: 600px) {
+    #header {
+        background-color: #000;
+        height: auto;
+        padding: 30px 0px;
+    }
+}
+
+/* nav */
+#nav {
+    width: 960px;
+    margin: 0 auto;
+    background-color: #3c3c7f;
+    color: #fff;
+}
+
+.gnb {
+    display: flex;
+    justify-content: space-evenly;
+    height: 60px;
+    align-items: center;
+}
+
+/* tablet */
+@media (max-width: 960px) {
+    #nav {
+        width: 100%;
+    }
+
+    .gnb {
+        justify-content: space-around;
+    }
+}
+
+/* mobile */
+@media (max-width: 600px) {
+    #nav {
+        background-color: transparent;
+        color: #333;
+        padding: 30px 0 20px;
+    }
+
+    .gnb {
+        flex-wrap: wrap;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .gnb li {
+        width: 90%;
+    }
+
+    .gnb li a {
+        border: 1px solid #000;
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+        margin-bottom: 10px;
+        border-radius: 8px;
+    }
+
+    .gnb li a:hover {
+        background-color: #000;
+        color: #fff;
+    }
+}
+
+/* container */
+/* 공통 */
+#container {
+    width: 960px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.text {
+    width: 70%;
+    /* flex: 3 3 0;
+    margin-right: 3vw; */
+}
+
+.text h2 {
+    margin-bottom: 30px;
+}
+
+.text p {
+    margin-bottom: 20px;
+}
+
+.photo {
+    width: 27%;
+    /* flex: 1 1 0; */
+}
+
+.photo li img {
+    width: 100%;
+    display: block;
+}
+
+.photo li:nth-child(2) {
+    margin: 12px 0;
+}
+
+/* tablet */
+@media (max-width: 960px) {
+    #container {
+        width: 100%;
+    }
+
+    .text {
+        width: 90%;
+        margin: 0 auto 30px;
+    }
+
+    .photo {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .photo li {
+        width: 32%;
+    }
+
+    .photo li:nth-child(2) {
+        margin: 0px 0;
+    }
+}
+
+/* mobile */
+@media (max-width: 600px) {
+    .text {
+        text-align: center;
+    }
+
+    .mobile_none {
+        display: none;
+    }
+
+    .photo {
+        justify-content: center;
+    }
+
+    .photo li {
+        width: 90%;
+    }
+
+    .photo li:nth-child(2) {
+        margin: 20px 0;
+    }
+}
+
+/* footer */
+#footer {
+    width: 960px;
+    margin: 0 auto;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0 60px;
+}
+
+/* tablet */
+@media (max-width: 960px) {
+    #footer {
+        width: 100%;
+    }
+}

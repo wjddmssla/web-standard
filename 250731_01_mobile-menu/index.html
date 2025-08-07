@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="inner_header">
+            <h1 class="logo"><a href="#"><img src="images/h1_logo.png" alt="로고"></a></h1>
+            <ul class="gnb">
+                <li><a href="#">MENU1</a></li>
+                <li><a href="#">MENU2</a></li>
+                <li><a href="#">MENU3</a></li>
+                <li><a href="#">MENU4</a></li>
+                <li><a href="#">MENU5</a></li>
+            </ul>
+            <div class="m_gnb_wrap">
+                <div class="m_link">
+                    <a href="#">
+                        <img src="images/menu.png" alt="메뉴">
+                    </a>
+                </div>
+                <div id="m_menu">
+                    <p id="close">X</p>
+                    <ul class="m_gnb">
+                        <li><a href="#">MENU1</a></li>
+                        <li><a href="#">MENU2</a></li>
+                        <li><a href="#">MENU3</a></li>
+                        <li><a href="#">MENU4</a></li>
+                        <li><a href="#">MENU5</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="section1">
+        <ul>
+            <li>NEW & NOTICE</li>
+            <li>EVENT</li>
+            <li>INTRODUCE</li>
+        </ul>
+    </div>
+    <div id="section2">
+        <ul>
+            <li>
+                <div class="menu_img">
+                    <img src="images/menu_01.jpg" alt="menu">
+                </div>
+                <strong>이탈리안 비엠티</strong>
+            </li>
+            <li>
+                <div class="menu_img">
+                    <img src="images/menu_02.jpg" alt="menu">
+                </div>
+                <strong>비엘티</strong>
+            </li>
+            <li>
+                <div class="menu_img">
+                    <img src="images/menu_03.jpg" alt="menu">
+                </div>
+                <strong>미트볼</strong>
+            </li>
+            <li>
+                <div class="menu_img">
+                    <img src="images/menu_04.jpg" alt="menu">
+                </div>
+                <strong>햄</strong>
+            </li>
+        </ul>
+    </div>
+    <div id="section3">
+        <ul>
+            <li>
+                <strong>매장찾기</strong>
+                <p>전국 가맹점을 확인하실 수 있습니다.</p>
+            </li>
+            <li>
+                <strong>창업문의</strong>
+                <p>TEL. 1234-5678</p>
+            </li>
+        </ul>
+    </div>
+    <!-- 오픈소스 -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+     <script>
+        $(".m_link").click(function(){
+            $("#m_menu").css({
+                'margin-left':'-50vw',
+                'transition':'margin-left 0.5s'
+            })
+        });
+        $("#close").click(function(){
+            $("#m_menu").css({
+                'margin-left':'0vw',
+                'transition':'margin-left 0.5s'
+            })
+        });
+     </script>
+</body>
+</html>

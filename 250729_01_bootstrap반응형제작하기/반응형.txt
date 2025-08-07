@@ -1,0 +1,31 @@
+반응형제작
+-> 장점: 웹/타블렛/모바일...다양한 기기 대응가능
+    단점: 디자인 제약(모바일 최적화)
+
+단위(유동단위)
+고정단위 -> px,em,rem
+유동단위 -> %,vw/vh,calc( ),clamp( )
+
+
+1. mediaQuery -> 미디어쿼리 
+디자인 변신 포인트(중단점)
+
+2. bootstrap -> 반응형웹제작 라이브러리
+
+
+col-md-12
+xs sm md lg xl xxl
+
+@media (min-width:1400px){
+	
+}
+@media (min-width:1024px) and (max-width:1399px) {
+
+}
+
+
+
+
+
+
+
